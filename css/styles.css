@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&display=swap');
+body{ padding: 0; margin: 0; font-family: 'Roboto', sans-serif;}
+.grid-container{ display: grid; max-width: 1200px; margin: 0 auto; grid-auto-columns: 1fr;
+    grid-auto-flow: column; }
+.item-logo{display: grid; text-align: center; grid-column: 1 / span 6;}
+.nav-menu{ width:100%; grid-column: 1 / span 6;}
+.nav-menu ul{margin: 0; padding:0; display: flex; width: 100%; justify-content: space-between; border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf;}
+.nav-menu ul li{ list-style: none;}
+.nav-menu ul li a{ font-size: 16px; text-decoration: none; text-transform: uppercase; color:#333; padding: 10px 0; display: inline-block;}
+.banner{ width: 100%; margin-top: 30px;}
+.banner img{ width: 100%;}
+.main-content{ margin: 30px 0;}
+.item-main{ grid-column: 1 / span 3;}
+.post-item{ display: flex; margin-bottom: 30px; background-color: #efefef; align-items: center;}
+.image-post{  min-width: 304px; max-width: 304px;}
+.post-content{ padding:20px}
+.post-content h2{ margin-top: 0; font-size: 20px; font-weight: 500;}
+.post-content p{ font-size: 16px; color: #666;}
+.post-content a{ color:#02cc76; font-size: 14px; text-decoration: none; border-bottom: 1px solid #666; padding-bottom: 5px; text-transform: uppercase;}
+.post-side{ text-align: center; padding:0 20px}
+.post-side h3{font-family: 'IBM Plex Serif', serif; }
+.post-side p{ font-size: 16px;}
+.profile-pic{ border-radius: 100%; width: 100%; max-width: 80px; border:1px solid #dfdfdf; }
+.footer-sec{ background-color: #000; padding:  10px 0; color:#fff; text-align: center; font-size: 11px;}
+.post-detailed{ display: block;}
+.post-detailed img{ width: 100%; min-width: 100%;}
+button { background-color: #4CAF50; border: none; color: white; padding: .5rem; text-align: center; text-decoration: none; display: inline-block; font-size: 14px; margin: .5rem; cursor: pointer; border-radius: .5rem;}
+@media screen and (max-width:767px) {
+    .item-main{ grid-column: 1 / span 6;}
+    .post-side{ grid-column: 1 / span 6;}
+    .post-item{ display: block;}
+    .image-post{ width: 100%; min-width: 100%;}
+    .nav-menu ul{ display: block;}
+    .nav-menu ul li{ text-align: center; border-bottom: 1px solid #dfdfdf;}
+    .nav-menu ul li:last-child{ border-bottom: 0;}
+}
